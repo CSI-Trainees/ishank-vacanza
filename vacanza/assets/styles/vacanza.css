@@ -1,0 +1,282 @@
+
+*{
+margin:0px; 
+padding:0px; 
+
+}
+.home{
+height:100vh; 
+}
+
+.background{
+height:100vh; 
+width:100%; 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter: brightness(0.7);
+position:absolute; 
+top:0%; 
+
+}
+
+.logo{
+height: 163px;
+width: 163px;
+margin: auto;
+margin-top:60px;
+top: 10%;
+left: 50%;
+filter: brightness(1.2);
+opacity:94%; 
+z-index:2;
+transition: all 1s ease-in-out; 
+}
+.logo:hover{
+transform :rotate(360deg); 
+}
+
+.navbar h1{
+z-index: 1;
+position: fixed;
+color: white;
+padding:20px;
+font-size: 33px;
+font-weight: 600;
+font-family: "Lato", sans-serif;
+-webkit-text-stroke:0.5px black ; 
+}
+
+.mylogo{
+display: flex;
+}
+
+.about{
+padding-top:0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+
+.vacanza-heading{
+z-index:4; 
+position:relative; 
+color:white;
+margin-top:40px;  
+font-size:65px; 
+width: 100%;
+display: flex;
+justify-content: center;
+font-family: "Lato", sans-serif;
+font-size:95px; 
+}
+
+.vacanza-heading span{
+text-shadow: 6px 3px 0px #183c0f;
+animation:animate 3s ease  infinite;
+-webkit-text-stroke:2px #183c0f; 
+}
+
+.vacanza-heading span:nth-child(1){
+stroke-dasharray:30px;
+animation-delay:1s; 
+}
+.vacanza-heading span:nth-child(2){
+animation-delay:1.5s; 
+}
+.vacanza-heading span:nth-child(3){
+animation-delay:2s; 
+}
+.vacanza-heading span:nth-child(4){
+animation-delay:2.5s; 
+}
+.vacanza-heading span:nth-child(5){
+animation-delay:3.5s; 
+}
+.vacanza-heading span:nth-child(6){
+animation-delay:4s; 
+}
+.vacanza-heading span:nth-child(7){
+animation-delay:4.5s; 
+}
+.vacanza-heading span:nth-child(8){
+animation-delay:5s; 
+}
+.vacanza-heading span:nth-child(9){
+animation-delay:5.5s; 
+}
+.vacanza-heading span:nth-child(10){
+animation-delay:6s; 
+}
+
+
+@keyframes animate{
+0%{
+text-shadow: 1px 1px 0px #183c0f ;
+-webkit-text-stroke:0px #183c0f; 
+}
+30%{
+-webkit-text-stroke:0.5px #183c0f; 
+}
+66%{
+-webkit-text-stroke:1px #183c0f; 
+}
+100%{
+text-shadow: 8px 4px 0px #183c0f; 
+-webkit-text-stroke:2px #183c0f; 
+}
+
+}
+.buttons{
+z-index:2;
+position:absolute; 
+width: 100%;
+display: flex;
+justify-content: center;
+
+}
+#register{
+height:60px;
+font-size: 17px;
+font-weight:700;
+text-align: center;
+width: 153px;
+color: white;
+ border: 3px solid white;
+ border-radius: 30px;
+ background-color: transparent;
+
+}
+.register{
+height:55px; 
+margin:30px;
+}
+
+
+.register i{
+z-index:10; 
+position: relative;
+color: white;
+top: -40px;
+left: 77%;
+font-size:20px;
+display:none;  
+margin-left:10px;
+
+}
+.register:hover i{
+display:block;
+ animation-delay:4.5s; 
+}
+
+ #register:hover {
+transition:all 0.3s ease; 
+background-color:#19795d; 
+color:white; 
+cursor:pointer; 
+width:183px; 
+ }
+
+ .register:hover i {
+z-index:10; 
+transform:translate(0% , 0px);
+display:block ;  
+}
+
+.rounds{
+background-color:#fbfbfb; 
+height:190vh; 
+}
+.box{
+width:60%; 
+margin-right:95px; 
+padding-left: 18px;
+}
+.picture{
+width:29%; 
+overflow:hidden; 
+}
+.picture img{
+width:100%; 
+height:100%; 
+clip-path:polygon(100% -41% , 208% 113% , -15% 122% , 34% 50% ); 
+transition: all 0.5s ease;
+overflow:hidden ; 
+}
+.picture img:hover{
+transform :scale(1.2); 
+}
+
+.round1{
+width: 73%;
+background: white;
+height: 320px;
+font-size: 20px; 
+display:flex;
+margin-top:100px; 
+font-family: "Lato", sans-serif;
+color:#6f6464; 
+word-spacing: 5px;
+box-shadow: 5px 10px 12px #888888;
+}
+.round-name{
+font-size:30px; 
+color:black; 
+}
+.round-topics{
+font-size:28px;
+color:#464444; 
+}
+.rules{
+background: transparent;
+width: 90px;
+height: 40px;
+border: 2px solid #025002;
+border-radius:5px ;
+font-size:20px; 
+margin-top:20px;
+color: #025002;
+font-weight:500; 
+}
+.rules:hover{
+background:#025002;
+color:white; 
+cursor:pointer; 
+}
+.social-handels{
+height:100px; 
+overflow:hidden; 
+}
+.social-handels img{
+height:100px;
+width:100%; 
+transition: all 9.5s ease;
+}
+.social-handels img:hover{
+transform: scale(2.9);
+}
+.social-handels i{
+color:white; 
+font-size:37px!important; 
+margin:10px;
+}
+.social-handels i{
+left:43%; 
+position:relative; 
+top:-82px; 
+}
+
+footer{
+height:25px; 
+background-color:purple; 
+
+}
+footer p {
+color:white; 
+display:flex ; 
+justify-content:center; 
+}
+
+
